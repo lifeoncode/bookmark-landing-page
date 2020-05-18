@@ -8,6 +8,24 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
+  <!-- menu only visible on mobile devices -->
+  <div id="menu">
+    <div class="head">
+      <img src="./images/logo-bookmark-footer.svg" alt="">
+      <img src="./images/icon-close.svg" id="close-menu" alt="">
+    </div>
+
+    <ul>
+      <li><a href="#features">FEATURES</a></li>
+      <li><a href="#">PRICING</a></li>
+      <li><a href="#questions">CONTACT</a></li>
+    </ul>
+    <button name="login" type="button">LOGIN</button>
+    <div class="social">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-twitter.svg" alt="">
+    </div>
+  </div>
 
   <!-- header -->
   <header>
@@ -27,6 +45,9 @@
       </nav>
     </div>
 
+    
+    <!-- hambuger menu -->
+    <img src="./images/icon-hamburger.svg" id="menu-btn" alt="">
   </header>
 
 
@@ -37,7 +58,7 @@
   <div id="showcase">
 
     <div class="showcase_inner container">
-      <div>
+      <div class="text">
         <h2>A Simple Bookmark Manager</h2>
         <p>
           A clean and simple interface to organize your favourite websites. Open a new 
@@ -160,7 +181,7 @@
         <img src="./images/logo-chrome.svg" alt="">
         <h3>Add to Chrome</h3>
         <p>Minimum version 62</p>
-        <img src="./images/bg-dots.svg" alt="">
+        <img src="./images/bg-dots.svg" class="line" alt="">
         <a href="#">Add & Install Extension</a>
       </div>
       
@@ -169,7 +190,7 @@
         <img src="./images/logo-firefox.svg" alt="">
         <h3>Add to Firefox</h3>
         <p>Minimum version 55</p>
-        <img src="./images/bg-dots.svg" alt="">
+        <img src="./images/bg-dots.svg" class="line" alt="">
         <a href="#">Add & Install Extension</a>
       </div>
       
@@ -178,7 +199,7 @@
         <img src="./images/logo-opera.svg" alt="">
         <h3>Add to Opera</h3>
         <p>Minimum version 46</p>
-        <img src="./images/bg-dots.svg" alt="">
+        <img src="./images/bg-dots.svg" class="line" alt="">
         <a href="#">Add & Install Extension</a>
       </div>
       

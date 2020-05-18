@@ -222,4 +222,30 @@ function init(e){
             input.style.border = '0';
         }
     })
+
+
+
+
+
+    // menu
+    const [openMenu, closeMenu, menu] = [document.querySelector('#menu-btn'), document.querySelector('#close-menu'), document.querySelector('#menu')];
+
+    openMenu.addEventListener('click', function(e){
+        menu.classList.add('show_menu');
+
+        setTimeout(() => {
+            menu.style.top = '0';
+            menu.classList.remove('show_menu')
+        }, 600)
+    })
+
+    closeMenu.addEventListener('click', function(e){
+        menu.classList.add('hide_menu');
+
+        setTimeout(() => {
+            menu.style.top = '-1200px';
+            menu.classList.remove('hide_menu');
+        }, 600)
+    })
+    
 }

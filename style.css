@@ -68,8 +68,89 @@ p{
 body{
     background-color: #fff;
     font-family: 'Rubik', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
+#menu{
+    display: none;
+    position: absolute;
+    top: -1200px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 4;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: hsla(229, 31%, 21%, 0.959);
+}
+
+#menu .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+
+#menu .head img{
+    margin: 0 4rem;
+}
+
+#menu li{
+    padding: 1rem 0;
+    /* margin-bottom: 2rem; */
+    border-bottom: 1px solid hsla(230, 20%, 47%, 0.959);
+}
+
+#menu li a{
+    font-size: 0.9rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#menu li a:hover{
+    color: var(--soft-red);
+}
+
+#menu ul{
+    width: 50%;
+    margin: auto;
+    border-top: 1px solid hsla(230, 20%, 47%, 0.959);
+}
+
+#menu button{
+    display: inline-block;
+    margin-top: 2rem;
+    width: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+#menu button:hover{
+    background-color: #fff;
+    color: var(--dark-blue);
+}
+
+#menu .social{
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social img{
+    margin: 0 1rem;
+}
+
+#menu-btn{
+    display: none;
+}
 
 
 
@@ -598,7 +679,171 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
+@media screen and (max-width: 1100px){
+
+
+
+    .container{
+        width: 80%;
+    }
+
+
+    #showcase{
+        /* display: block; */
+        height: 70vh;
+    }
+
+    #showcase .overlay{
+        top: 20%;
+        height: 40%;
+        width: 70%;
+        border-bottom-left-radius: 30%;
+    }
+    
+
+    .showcase_inner{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+    .showcase_inner .text{
+        padding: 2rem 4rem;    
+    }
+
+
+    /* main */
+    #features,
+    #download,
+    #questions{
+        padding: 2rem 0;
+    }
+    
+
+
+    /* features */
+    /* tabs */
+    #features .overlay{
+        top: 50%;
+        width: 60%;
+        height: 25%;
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+    
+    .features_inner{
+        width: 60%;
+        margin: auto;
+    }
+    
+    .tabs ul{
+        width: 50%;
+        border: 0;
+    }
+
+    .tabs li{
+        display: block;
+        padding: 1rem 0;
+        background-color: rgb(255, 251, 251);
+    }
+    
+    .tab_a_content,
+    .tab_b_content,
+    .tab_c_content{
+        grid-template-columns: none;
+        grid-gap: 2rem 0;
+        padding: 1rem 0;
+    }
+    
+    .tab_a_content .text,
+    .tab_b_content .text,
+    .tab_c_content .text{
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    
+    /* download */
+    .download_inner{
+        grid-template-columns: none;
+        grid-gap: 2rem 0;
+        padding: 2rem;
+    }
+    
+    .download_inner > div + div{
+        top: 0;
+    }
+    .download_inner > div + div + div{
+        top: 0;
+    }
+    
+    
+    
+    
+    /* questions */
+    
+    
+    .questions_inner{
+        width: 50%;
+    }
+    
+    
+    
+    
+    
+    form .center{
+        width: 60%;
+    }
+    
+    
+    footer{
+        background: var(--dark-blue);
+        padding: 4rem 0;
+    }
+    
+    .footer_inner{
+        display: block;
+        text-align: center;
+    }
+    
+    .footer_inner li{
+        display: block;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .footer_inner li a{
+        font-size: 0.8rem;
+        color: var(--gray-blue);
+        transition: all 0.3s ease;
+    }
+    
+    .footer_inner > ul + ul{
+        margin-top: 4rem;
+        display: block;
+    }
+    .footer_inner > ul + ul li{
+        display: inline;
+        padding: 0 2rem;
+    }
+    
+    
+        
+}
 
 
 
@@ -608,6 +853,142 @@ footer{
 
 
 
+
+
+
+
+@media screen and (max-width: 768px){
+
+    
+    /* change to hamburger menu */
+    header nav{
+        display: none;
+    }
+
+    #menu-btn{
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 2rem;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    
+    .container{
+        width: 90%;
+    }
+
+    .center,
+    .tabs ul{
+        width: 60%;
+    }
+
+    .questions_inner,
+    form .center{
+        width: 70%;
+    }
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 630px){
+
+
+
+    #menu .head{
+        margin-bottom: 4rem;
+    }
+    #menu ul{
+        width: 90%;
+    }
+    #menu button{
+        width: 90%;
+    }
+    #menu .social{
+        left: 35%;
+    }
+    
+    
+
+    #showcase{
+        height: auto;
+    }
+    #showcase .overlay{
+        top: 5%;
+        height: 32%;
+    }
+
+    #showcase img,
+    #features img,
+    form input,
+    form button{
+        width: 100%;
+    }
+
+    #showcase h2{
+        font-size: 1.6rem;
+    }
+    
+    .showcase_inner .text{
+        padding: 1rem;    
+    }
+
+    .center{
+        width: 80%;
+    }
+
+    .tabs ul,
+    .questions_inner,
+    form .center{
+        width: 90%;
+    }
+
+    #features .overlay{
+        top: 45%;
+        width: 65%;
+        height: 26%;
+    }
+    
+
+    .chrome,
+    .firefox{
+        display: inline-block;
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    
+
+    .download_inner > div img{
+        width: 50%;
+    }
+    .download_inner > div .line{
+        width: 100%;
+    }
+
+    form input{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 340px){
+    .container{
+        width: 95%;
+    }
+}
 
 
 
@@ -663,6 +1044,25 @@ footer{
         padding: 2rem;
     }
 }
+
+.show_menu{
+    animation: open 0.5s 0.1s ease forwards;
+}
+@keyframes open{
+    100%{
+        top: 0;
+    }
+}
+.hide_menu{
+    animation: close 0.5s 0.1s ease forwards;
+}
+@keyframes close{
+    100%{
+        top: -1200px;
+    }
+}
+
+
 
 #error{
     display: inline-block;
