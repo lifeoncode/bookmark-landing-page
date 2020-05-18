@@ -212,7 +212,8 @@
       <div id="q-a">
         <div class="top">
           <h3>What is Bookmark?</h3>
-          <img src="./images/icon-arrow.svg" alt="">
+          <img src="./images/icon-arrow.svg" class="drop" alt="">
+          <img src="./images/icon-arrow-close.svg" class="hide close" alt="">
         </div>
 
         <div id="ans-a" class="hide">
@@ -227,7 +228,8 @@
       <div id="q-b">
         <div class="top">
           <h3>How can I request a new browser?</h3>
-          <img src="./images/icon-arrow.svg" alt="">
+          <img src="./images/icon-arrow.svg" class="drop" alt="">
+          <img src="./images/icon-arrow-close.svg" class="hide close" alt="">
         </div>
 
         <div id="ans-b" class="hide">
@@ -244,7 +246,8 @@
       <div id="q-c">
         <div class="top">
           <h3>Is there a mobile app?</h3>
-          <img src="./images/icon-arrow.svg" alt="">
+          <img src="./images/icon-arrow.svg" class="drop" alt="">
+          <img src="./images/icon-arrow-close.svg" class="hide close" alt="">
         </div>
 
         <div id="ans-c" class="hide">
@@ -260,7 +263,8 @@
       <div id="q-d">
         <div class="top">
           <h3>What about other Chromium browsers?</h3>
-          <img src="./images/icon-arrow.svg" alt="">
+          <img src="./images/icon-arrow.svg" class="drop" alt="">
+          <img src="./images/icon-arrow-close.svg" class="hide close" alt="">
         </div>
 
         <div id="ans-d" class="hide">
@@ -296,8 +300,9 @@
       <span>35,000+ already joined</span>  
       <h2>Stay up-to-date with what<br>we’re doing</h2>
 
-      <input type="email" name="email" placeholder="Enter your email address" required>
-      <button type="submit" name="submit">Contact us</button>
+      <input type="email" name="email" placeholder="Enter your email address" >
+      <button type="submit" name="submit">Contact us</button><br>
+      <p id="error" class="hide"></p>
     </div>
 
   </form>
@@ -327,5 +332,7 @@
     </div>
     
   </footer>
+
+  <script src="./main.js" defer></script>
 </body>
 </html>
