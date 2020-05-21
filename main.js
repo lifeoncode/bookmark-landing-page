@@ -243,7 +243,7 @@ function init(e){
         menu.classList.add('hide_menu');
 
         setTimeout(() => {
-            menu.style.top = '-1200px';
+            menu.style.top = '-1450px';
             menu.classList.remove('hide_menu');
         }, 600)
     })

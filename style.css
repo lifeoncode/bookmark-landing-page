@@ -74,7 +74,7 @@ body{
 #menu{
     display: none;
     position: absolute;
-    top: -1200px;
+    top: -1450px;
     left: 0;
     height: 100vh;
     width: 100%;
@@ -691,7 +691,7 @@ footer{
 
 
 /* media queries */
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
 
 
 
@@ -856,7 +856,7 @@ footer{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 
     
     /* change to hamburger menu */
@@ -1057,7 +1057,7 @@ footer{
 }
 @keyframes close{
     100%{
-        top: -1200px;
+        top: -1450px;
     }
 }
 
