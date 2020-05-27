@@ -94,6 +94,7 @@ body{
 
 #menu .head img{
     margin: 0 4rem;
+cursor: pointer;
 }
 
 #menu li{
@@ -149,6 +150,7 @@ body{
 
 #menu-btn{
     display: none;
+cursor: pointer;
 }
 
 
