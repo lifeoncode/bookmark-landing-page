@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$gray-blue: hsl(229, 8%, 60%);
+$dark-blue: hsl(229, 31%, 21%);
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin flexDisplay($dir, $align, $justify) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin gridDisplay($col, $gap) {
+  display: grid;
+  grid-template-columns: $col;
+  gap: $gap;
+}
+
+@mixin transitionFast {
+  transition: all 0.3s ease;
+}
+
+@mixin transitionMedium {
+  transition: all 0.6s ease;
+}
+
+@mixin transitionSlow {
+  transition: all 1s ease;
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1);
+  }
+}
